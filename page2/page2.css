@@ -312,7 +312,12 @@ img {
   margin: 0;
 }
 
-#api_container button p:hover {
+#api_container button a:hover {
+  color: #222;
+  transition: 0.3s all ease-in-out;
+}
+
+#call_api_button p:hover {
   color: #222;
   transition: 0.3s all ease-in-out;
 }
@@ -397,9 +402,10 @@ footer h3 {
 
   #api_container p {
     font-size: clamp(0.6rem, 1vw, 1rem);
+    text-align: center;
   }
 
-  #api_container button p {
+  #api_container button a {
     font-size: clamp(0.6rem, 1vw, 1rem);
   }
 }

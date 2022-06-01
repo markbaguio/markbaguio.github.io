@@ -485,3 +485,13 @@ footer h3 {
     padding: 1rem;
   }
 }
+
+@media screen and (max-width: 580px) {
+  #content1_container h1 {
+    text-align: center;
+  }
+
+  #content1_container p {
+    text-align: center;
+  }
+}
