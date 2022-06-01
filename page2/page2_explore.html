@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/32ada3bf3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="page2.css" />
+    <title>Mark Baguio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand_logo"><a href="/index.html">Mark Baguio</a></div>
+      <a href="#" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar_links">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="page2_explore.html">Explore</a></li>
+          <li><a href="/page3/page3_media.html">Multimedia</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="main_container" class="container-fluid">
+      <div class="title_container">
+        <h1 id="minigame_title">Mini Game</h1>
+      </div>
+      <p id="not_available">Not Available on small screen.</p>
+      <div id="minigame_container" class="row">
+        <div class="col">
+          <nav>
+            <div class="info_container">
+              <div class="score_container">
+                <h5>Score: <span id="score">0</span></h5>
+              </div>
+              <button id="restart_button" class="btn btn-outline-light">
+                Reset
+              </button>
+              <!-- <button class="btn btn-outline-light">Open in new tab</button> -->
+            </div>
+          </nav>
+          <div class="target_container">
+            <div class="hit1" id="target1"></div>
+            <div class="hit2" id="target2"></div>
+            <div class="hit3" id="target3"></div>
+            <div class="hit4" id="target4"></div>
+            <div class="hit5" id="target5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="api_container" class="container-fluid pt-5 pb-5">
+      <div class="api_title_container">
+        <h1 id="api_title">Generate a Random Picture of a Dog</h1>
+      </div>
+      <div class="random_dog_container">
+        <img src="/assets/img/dog.gif" alt="" />
+      </div>
+      <p>Click the button to generate a random image of a dog.</p>
+      <button id="call_api_button" class="btn btn-outline-light">
+        <p>Random Dog</p>
+      </button>
+    </div>
+  </body>
+  <!-- Footer Section -->
+  <footer>
+    <div id="footer_container" class="container-fluid">
+      <div class="logo_container">
+        <a href="/index.html" id="logo">Mark Baguio</a>
+      </div>
+      <h3>All rights reserved. 2022</h3>
+      <div class="icon_container">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="mini_game.js"></script>
+  <script src="/navbar.js"></script>
+  <script src="page2.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</html>
